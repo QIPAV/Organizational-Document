@@ -14,6 +14,7 @@
 \usepackage{eso-pic}
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{multirow}
 
 \author{Aleksander Holthe  \\ Katrine Sundal Haune \\ Kent Kjeldaas \\ Stian Fredriksen \\ Tomas Lyngroth \\ Vanja Katinka Halvorsen}
 
@@ -44,10 +45,8 @@
         \includegraphics[width = 0.35\textwidth]{VAPIQ-PICTURES//Logo2_Tilted.png}
         \\[2.0 cm] 
     \end{figure}                              
-    \textsc{\Huge FILE NAME}  
-    \\[1 cm]
-    \textsc{\Large EXTRA NAME}   
-    \\[3.0 cm]
+    \textsc{\Huge Organizational Document}  
+    \\[4.0 cm]
 	\large \vapiqteam      
 \end{titlepage}
 \pagecolor{white}
@@ -62,7 +61,7 @@
 \textbf{Version:}    &\textbf{Date:} 	 &\textbf{Comment:}    &\textbf{Done by:}   &\textbf{Approved by:}  \\
 
 0.0       & $19.01.17$       & Document created  & SF    & SF          \\ \rowcolor{gainsboro}
-0.1       & $00.00.00$       & what was done  & Name    & Name          \\
+0.1       & $19.01.17$       & Added text  & KSH    & KSH          \\
 0.2       & $00.00.00$       & what was done  & Name    & Name          \\ \rowcolor{gainsboro}
 0.3       & $00.00.00$       & what was done  & Name    & Neme          \\
 \end{tabular}                                                                   
@@ -103,25 +102,31 @@ Variable Pitch Quadcopter   & VAPIQ
 \newpage
 
 % INTRODUCTION 
-%\subfile{sections/Introduction}
+\subfile{sections/introduction}
+\newpage
 
-% CHAPTER
-%\subfile{sections/CHAPTER_file}
-%\newpage
+\subfile{sections/groupmembers}
+\newpage
 
 % BASIC TABLE SETUP
-%\subfile{sections/TABLE_MAL_file}
-%\newpage
+\subfile{sections/supervisors}
+\newpage
+
+% CHAPTER
+\subfile{sections/organization}
+\newpage
+
 
 % BASIC PICTURE SETUP
-%\subfile{sections/PICTURE_MAL_file}
-%\newpage
+\subfile{sections/projectplan}
+\newpage
+
 
 
 % Use  \cite{nameOfReference} in text where you want to place numbering for reference
 
-%\subfile{sections/references}
-%\newpage
+\subfile{sections/references}
+\newpage
 
 
 \end{document}
