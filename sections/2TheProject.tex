@@ -1,23 +1,80 @@
 \section{The Project}
 
-Norwegian Defence Research Establishment(FFI), has the need to examine some properties regarding quadcopters with variable pitch. \\
+The Norwegian Defence Research Establishment(FFI) has requested a research paper examining the properties of quadcopters with variable pitch. \\
 \\
 A quadcopter with traditional fixed-pitch propellers changes position by accelerating or decelerating individual propellers. Thus, generating more or less thrust as required.
-But in some cases this method has shown to be slow, and the quadcopter can't be held stable in disturbing and turbulent conditions.\\
+But in some cases this method has shown to be to slow, and the quadcopter can't be held stable in disturbing and turbulent conditions, especially when landing. \\
 \\
-For this project the Norwegian Defence Research Establishment(FFI) want the students to:
-\begin{itemize}
-    \item Build a small ($<2,5kg$) quadcopter with variable pitch propellers.
-    \item Measure the response-time of the variable pitch propeller quadcopter and compare it to traditional fixed pitch propeller quadcopter. 
-    \item Investigate if there is a possibility of more stable flight and landing. 
-\end{itemize}
+For this project the Norwegian Defence Research Establishment(FFI) wants the students to investigate the characteristics and benefits of variable pitch for use on quadcopters. The objectives are:
+\begin{enumerate}
+\item Build a small quadcopter (\<2,5 kg) with variable pitch
+\item Build a small quadcopter (\<2,5 kg) with fixed pitch
+\item Investigate if variable pitch gives the possibility of more stable flight and landing in challenging conditions
+\item Investigate if variable pitch improves response time
+\item Compare the fixed pitch quadcopter against the variable pitch quadcopter
+\end{enumerate}
 
 \subsection{Project Outline} 
-In order to answer the questions posed by FFI, a quadcopter must be designed, built and then tested. Building a quadcopter is an interdisciplinary effort, containing elements from software, hardware and electrical engineering. \\
-\\
-The team has to acquire a rigorous understanding of quadcopters from theory to practice. Two quadcopters must be built, a controller system must be developed, and the control system has to be translated into logic software.\\
-\\
-Testing and flights shall be performed in Kongsberg Innovation Center(KIC) by the use of a tracking system called Qualisys. Most computations will be done on a external computer based on the outputs from the tracking system. On the quadcopter, there will be a device that computes the inner loop that is responsible for the stabilisation. It also receives data from the external computer and makes new calculations based on these data.\\
-\\
-When a working prototype is produced, there will be performed a series of tests to acquire the necessary data to answer the questions posed by FFI.
 
+In order to answer the questions posed by FFI, a quadcopter must be designed, built and then tested.
+\\
+The team has to acquire a rigorous understanding of quadcopters from theory to practice. Two quadcopters must be built, a control system must be developed, and the control system has to be translated into logic software on a flight controller.\\
+\\
+Flight testing and data gathering is performed in Kongsberg Innovation Center (KIC) using a motion capture system called Qualisys. The motion capture system is used to accurately measure and log the position and trajectories of the quadcopter. 
+\\
+When a working prototype is produced, there will be performed a series of tests to acquire the necessary data to answer the questions from FFI.
+
+\subsection{Motivation}
+Building a quadcopter is an interdisciplinary effort, containing elements from software, hardware and electrical engineering. This project is a great opportunity to experience multidisciplinary teamwork and engineering first hand. The thought of pursuing such a highly technological subject and a subject under development is appealing to all the team members and a great source of motivation. The fact that no commercially available variable pitch flight controller or quadcopter with RPM control exists, makes the project appealing since we are making something that is not possible to buy.\\
+
+\subsection{Limitations}
+There are some limitations to every project and this one is no exception. The project has an end date, and the team cannot pay attention to, document or discuss all aspects of quadcopters. The most important aspects considered is the stability of variable pitch quadcopters, especially during landing, and how they compare to traditional fixed pitch quadcopters. \\
+\\
+The scope of this project is at the limit of what can be achieved during a 5 month bachelor thesis. The subject of this project is also very complex and none of the team members have previous experience with making a fully functional quadcopter. There is marginal information about quadcopters with variable pitch available, and there exists only a hand full of commercially available quadcopters with variable pitch, and no available quadcopter with variable pitch and RPM control. \\
+\\
+No commercially available flight controller supports variable pitch, this means that the team has to create a new flight controller or do changes to an existing one. The stability of the final quadcopter is of great importance to create the relevant data for answering the objectives given by FFI.  
+Ideally, the team should use autopilot software to get the most reproducible test results. Autonomy is a complex and large subject by itself, and will be implemented only if possible. 
+
+\subsection{Approach}
+In order to answer the question FFI has raised, two quadcopters must be created. One of them should be with fixed pitch, for reference, and the other one with variable pitch. 
+
+With the two quadcopters the team is building, it should be possible to test differences between the fixed- and variable pitch quadcopter. The most important question, and the one FFI wants an answer to: "Can variable pitch provide a more stable landing than fixed pitch"?. \\
+\\
+To test this, we need to land the two quadcopters in similar environment multiple times. There might even be a need to inflict with an outer disturbance such as wind to get useful data. \\
+\\
+Additionally, we also want to test differences between the two solutions in a test rig. In that way, we can answer if the response time is really faster on variable pitch than on fixed pitch. \\
+\\
+To handle the complexity and diversity of the project, Scrum was chosen. Scrum ensures that sudden unforeseen changes are identified early and acted upon. It gives transparency within the team and ensures rapid development.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+%%=========================================
+\section{Limitations}
+In this section you describe the limitations of your study. These may be related to the study object (physical limitations, operational limitations), to the thoroughness of the analysis, and so on.
+
+- Knowledge
+- Time
+- Complexity
+- Stable Flight->
+- Autonomous control for reproducibility 
+- In depth study of aerodynamics, propellers etc
+
+%%=========================================
+\section{Approach}
+Here you should describe the (scientific) approach that you will use to solve the problem and meet your objectives. You should specify the approach for each objective.
+
+On the quadcopter, most computations will be done on an external computer based on the outputs from the tracking system. On the quadcopter, there will be a device that computes the inner loop that is responsible for the stabilisation.\\
+\end{comment}
